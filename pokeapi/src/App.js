@@ -44,8 +44,9 @@ function App() {
   return (
     <div className="App">
       <div className="TitleSection">
-        <h1>Pokédex</h1>
+        <h1 className="Title">Pokédex</h1>
         <input
+          className="inputfield"
           type={Text}
           placeholder="Enter the Pokemon's name here"
           onChange={(event) => {
@@ -61,7 +62,7 @@ function App() {
           <h1>Please Choose a Pokemon</h1>
         ) : (
           <>
-            <h1 className="stat name">{pokemon.name}</h1>
+            <h1 className="stat name">Name: {pokemon.name}</h1>
             <img src={pokemon.img}></img>
             <h1 className="stat species">Species: {pokemon.species}</h1>
             <h1 className="stat type">Type: {pokemon.type}</h1>
